@@ -11,31 +11,28 @@ class user:
     
     def make_deposit(self, amount):
         self.account_balance += amount
-        
+        return self
     
     def make_withdrawal(self, amount):
         self.account_balance -= amount
-       
+        return self
     
     def display_user_balance(self):
         print(f"user : {self.first_name} {self.last_name} Balance: ${self.account_balance}")
-        
+        return self
     
     def transfer_money(self, other_user, amount):
         self.account_balance -= amount
         other_user.account_balance += amount
         print(f"user : {self.first_name} {self.last_name} Balance: ${self.account_balance} sand monney to { other_user.first_name} { other_user.last_name} his balance is { other_user.account_balance}")
-       
+        return self
 
 name_1 = user( "mouin" , "mohsni", "mouin.mohsni@" ,1000)
 name_2 = user( "nassim" , "chaaben", "nassim.chaaben@" ,1000)
 name_3 = user( "Elon" , "mask", "Elon.mask@" ,1000)
 
-name_1.make_deposit(100)
-name_1.make_withdrawal(400)
-name_1.make_withdrawal(1400)
-name_1.make_withdrawal(700)
-name_1.display_user_balance()
+name_1.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawal(50).display_user_balance()
+
 
 
 
