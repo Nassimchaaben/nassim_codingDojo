@@ -64,7 +64,7 @@ def print_info(some_dict):
         for i in range(0, len(val)):
             print(val[i])
 
-print_info(dojo)
+print_info(dojo)  
 
 
 

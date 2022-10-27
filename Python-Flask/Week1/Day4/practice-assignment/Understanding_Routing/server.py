@@ -1,5 +1,5 @@
-from glob import escape
-from unicodedata import name
+
+from turtle import title
 from flask import Flask  # Import Flask to allow us to create our app
 app = Flask(__name__)    # Create a new instance of the Flask class called "app"
 @app.route('/')          # The "@" decorator associates this route with the function immediately following
@@ -12,7 +12,7 @@ def success():
     return "Dojo!"
 @app.route('/say/<name>')
 def say(name):
-    return f"Hi {name}!"  
+    return f"Hi {name/title()}!"  
 
 @app.route('/repeat/<int:num>/<string:name>')
 def repeat(num,name):
