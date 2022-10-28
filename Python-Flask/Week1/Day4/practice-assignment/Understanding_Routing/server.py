@@ -12,7 +12,7 @@ def success():
     return "Dojo!"
 @app.route('/say/<name>')
 def say(name):
-    return f"Hi {name/title()}!"  
+    return f"Hi {name}!"  
 
 @app.route('/repeat/<int:num>/<string:name>')
 def repeat(num,name):
