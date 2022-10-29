@@ -32,7 +32,7 @@
             "markers": "platform_system == 'Windows'",
             "version": "==0.4.6"
         },
-        "flask": {
+        "flask": { 
             "hashes": [
                 "sha256:642c450d19c4ad482f96729bd2a8f6d32554aa1e231f4f6b4e7e5264b16cca2b",
                 "sha256:b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526"
