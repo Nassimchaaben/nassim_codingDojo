@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>dojo survey</title>
+</head>
+<body>
+    <form action="/process", method="post" class="bg-dark text-primary p-5 rounded col-6 mx-auto">
+        <!-- some block elements -->
+<h1>Dojo Survey</h1>
+
+<p></p><label> Name:</label></p>
+<p><input type="text" name="name"></p>
+Dojo location:
+<p><select name="location">
+    <option>---Select Location---</option>
+    <option>Chicago</option>
+    <option>seatlle</option>
+    <option>online</option>
+    <option>burbank</option>
+</select></p>
+Favorite language:
+<p><select name="language">
+    <option>---Select language---</option>
+    <option>Html</option>
+    <option>python</option>
+    <option>java script</option>
+    <option>c#</option>
+</select></p>
+Comments(optional)
+<p>
+    <textarea name="comment" cols="50" rows="6"></textarea>
+</p>
+<p>
+    <input type="submit" value="Submit!" class="btn btn-warning">
+</p>
+
+
+    </form>
+    
+</body>
+</html>
