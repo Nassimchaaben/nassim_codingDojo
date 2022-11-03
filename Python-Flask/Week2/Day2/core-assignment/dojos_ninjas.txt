@@ -1,0 +1,12 @@
+SELECT * FROM dojos;
+INSERT into dojos  (name,created_at) values ("jeff",now());
+DELETE FROM dojos ;
+SET SQL_SAFE_UPDATES = 0;
+INSERT into dojos  (name,created_at) values ("jeff",now());
+INSERT into ninjas  (first_name,last_name,age,created_at,dojos_id) values ("elon","mask",40,now(),4),("jeff","bizoss",52,now(),4),("nilson","mandella",70,now(),4);
+INSERT into ninjas  (first_name,last_name,age,created_at,dojos_id) values ("mark","zukburg",42,now(),5),("leonel","messi",34,now(),5),("frederico","mvalverde",22,now(),5);
+INSERT into ninjas  (first_name,last_name,age,created_at,dojos_id) values ("othman","dembele",27,now(),6),("eden","hazard",30,now(),6),("cristiano ","ronaldo",35,now(),6);
+SELECT * FROM dojos
+LEFT JOIN ninjas
+ON dojos.id = ninjas.dojos_id
+WHERE dojos.id = 4;

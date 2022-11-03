@@ -1,0 +1,5 @@
+SELECT  FROM names.names;
+INSERT into names  (name) values (nassim);
+INSERT into names  (name) values (anwar);
+INSERT into names  (name) values (ninja);
+UPDATE names set name =heni WHERE id = 2
