@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Read(one)</title>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <div class="nav justify-content-between"><h1>User {{one.id}}</h1>
+            <a href='/users' >Home</a>
+        <div class="card-body">
+          <h5 class="card-title">Full Name:{{one.first_name}} {{one.last_name}}</h5>
+          <h5 class="card-subtitle mb-2 ">Email : {{one.email}}</h5>
+          <h5 class="card-text">Created on : {{one.created_at}}</h5>
+          <h5 class="card-text">Last Updated on: {{one.updated_at}}</h5>
+          
+        </div>
+        <a href="" class="card-link">Edit</a>|<a href="" class="card-link">Delete</a>
+          
+      </div>
+</body>
+</html>

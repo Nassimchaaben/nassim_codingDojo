@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>All_dojos</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-around ">
+        <form action="/create/dojo" method="post">
+            <div class="mb-3">
+                <h2 class="text-center text-primary">New Dojo</h2>
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" aria-describedby="name">
+            </div>
+            <button type="submit" class="btn btn-primary">Add dojo</button>
+        </form>
+          <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">All dojos</div>
+                <div class="card-body text-primary">
+                    {% for do in table %}
+                    <p class="card-text">
+                        <a href="/dojos/{{do.id}}" class="">{{do.name}}</a>
+                    </p>
+                    {% endfor %}
+                </div>
+          </div>
+    </div>
+
+    <a href="/ninjas" class="text-center mx-auto">Add Ninja</a>   
+</body>
+</html>

@@ -26,3 +26,48 @@ def create():
     }
     Users.save(data)
     return redirect('/users')
+
+@app.route('/users/<int:id>')
+def show(id):
+    data={'id':id}
+    one=Users.get_one(data)
+    
+    return render_template("show.html",one=one)
+
+
+
+
+# @app.route('/user/edit',methods=['POST'])
+# def edit():
+    
+#     Users.fixTheuser(**request.form)
+#     return redirect('/edit')
+# Update One Robot
+@app.route('/users/<int:id>/edit')
+def fixRob(id):
+    data ={ 
+        "id":id
+    }
+    one=Users.get_one(data)
+    return render_template("edit.html",one=one)
+
+# Update route when he finnish the Update
+@app.route('/edit/hi',methods=['POST'])
+def update():
+    data = {
+    "id":request.form['id'],
+    "fname":request.form['first_name'],
+    "lname": request.form['last_name'],
+    "email": request.form['email']
+        
+    }
+    Users.fixTheuser(data)
+    return redirect('/')
+
+@app.route('/users/delet/<int:id>')
+def delet(id):
+    data ={
+        'id': id
+    }
+    Users.delete(data)
+    return redirect('/users')
