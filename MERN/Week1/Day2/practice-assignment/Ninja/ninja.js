@@ -14,11 +14,13 @@ class Ninja {
     }
 
     drinkSake(){
-        this.health += 10; 
+        this.health += 10
+       console.log(this.health);  
     }
 }
 
 const ninja1 = new Ninja("Hyabusa");
 ninja1.sayName();
 ninja1.showStats();
-// ninja1.drinkSake();
+ninja1.drinkSake();
+ninja1.showStats();
