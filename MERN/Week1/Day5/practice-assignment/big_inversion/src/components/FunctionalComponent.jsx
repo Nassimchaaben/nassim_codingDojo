@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const FunctionalComponent = (props) => {
@@ -11,7 +11,6 @@ const FunctionalComponent = (props) => {
             <h1>{ props.firstname }, { props.lastname }</h1>
             <p>Age: { props.age }</p>
             <p>Hair Color: { props.HairColor }</p>
-        
         </div>
     )
 }
