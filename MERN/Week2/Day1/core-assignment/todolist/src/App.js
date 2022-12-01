@@ -1,28 +1,29 @@
 import './App.css';
-import { useState } from 'react';
+// import { useState } from 'react';
+import TodoList from './components/TodoList';
 
 function App() {
-  const [input, setInput] = useState('');
-  const [list, setList] = useState([]);
-  const [check , setCheck]=useState(false)
+  // const [input, setInput] = useState('');
+  // const [list, setList] = useState([]);
+  // const [check , setCheck]=useState(false)
 
 
-  const handle=(e)=>{
-    e.preventDefault()
-    setList([...list,input])
-  }
+  // const handle=(e)=>{
+  //   e.preventDefault()
+  //   setList([...list,input])
+  // }
 
-  const dell = (id) => {
+  // const dell = (id) => {
 
-    const copylist=[...list]
-    copylist.splice(id,1)
-    setList(copylist)
-  }
+  //   const copylist=[...list]
+  //   copylist.splice(id,1)
+  //   setList(copylist)
+  // }
   
 
   return (
     <div className="App">
-         <form onSubmit={handle}>
+         {/* <form onSubmit={handle}>
         <input onChange={(e)=>setInput(e.target.value)}/>
         <button type="submit">ADD</button>
       </form>
@@ -36,7 +37,9 @@ function App() {
             <button onClick={()=>{dell(idx)}}>Delete</button>
             </p>
           
-          } )}</div>
+          } )}</div> */}
+
+          <TodoList/>
     </div>
   );
 }
