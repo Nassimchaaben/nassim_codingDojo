@@ -4,9 +4,23 @@ namespace PORTFOLIO.Controllers;     //be sure to use your own project's namespa
     {
         //for each route this controller is to handle:
         [HttpGet]       //type of request
-        [Route("")]     //associated route string (exclude the leading /)
+        [Route("/index")]     //associated route string (exclude the leading /)
         public string Index()
         {
-            return "Hello World from HelloController!";
+            return "This is my Index !";
+        }
+
+         [HttpGet]       //type of request
+        [Route("/projects")]     //associated route string (exclude the leading /)
+        public string Second()
+        {
+            return "These are my project";
+        }
+
+         [HttpGet]       //type of request
+        [Route("/contact")]     //associated route string (exclude the leading /)
+        public string Third()
+        {
+            return "This is my contact";
         }
     }
