@@ -1,0 +1,15 @@
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\bin\Debug\net6.0\FirstCSharp.exe
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\bin\Debug\net6.0\FirstCSharp.deps.json
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\bin\Debug\net6.0\FirstCSharp.runtimeconfig.json
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\bin\Debug\net6.0\FirstCSharp.dll
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\bin\Debug\net6.0\FirstCSharp.pdb
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.dll
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\refint\FirstCSharp.dll
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.pdb
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\FirstCSharp.genruntimeconfig.cache
+C:\Users\samsung\Desktop\nassim_codingDojo\C#.NET\Week1\Day1\core-assignment\FirstCSharp\obj\Debug\net6.0\ref\FirstCSharp.dll
