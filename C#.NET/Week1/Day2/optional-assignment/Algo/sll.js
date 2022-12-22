@@ -67,7 +67,7 @@ class SSL{
             }
         } return false 
     }
-    removeAtFront (value)
+    delete (value)
     {
         if (this.isEmpty()){
             return false
@@ -75,18 +75,41 @@ class SSL{
         else 
         {
             let find = this.head ;
-            while (find){
-            if (find.value === value){
-                return delete find.value
+            while (find.next){
+            if (find.value == value){
+                find.next = find.next.next
+                return this
             }
             else {
                 find = find.next
+            } 
             }
-           
-            }
+        }
 
+    }
+
+    removeAtFront()
+    {
+        if (this.isEmpty()){
+            return false
+        }
+        else {
+            this.head = this.head.next
+            return  this
         }
     }
+
+
+size()
+{
+   let find =this.head ;
+   count = 1 ;
+   while (find.next!== null){
+    find = find.next
+    count ++
+   }
+   return count
+}
 } 
 
 var firstNode = new Node (5);
