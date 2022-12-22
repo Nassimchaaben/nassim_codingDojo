@@ -1,0 +1,18 @@
+<h1>Here are some delecious food!</h1>
+<div>
+@{
+    String[] lunchs ={"Apple Pie","Pizza" ,"Cinnamons Rolls" , "Lasagna" , "Donuts" , "Chocolate coke " , "Burritos"};
+
+    foreach(string lunch in lunchs)
+    {
+        if (lunch.StartsWith("C"))
+        {
+            <p style="color:red;" >@lunch</p>
+        }
+        else 
+        {
+            <p>@lunch</p>
+        }
+    }
+}
+</div>
