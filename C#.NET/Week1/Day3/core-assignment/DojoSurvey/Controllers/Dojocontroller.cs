@@ -29,6 +29,6 @@ public class DojoContoller : Controller
         ViewBag.language = language;
         ViewBag.comment = comment;
         
-        return RedirectToAction("Second");
+        return View("SecondView");
     }
 }
