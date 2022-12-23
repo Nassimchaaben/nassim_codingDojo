@@ -110,6 +110,39 @@ size()
    }
    return count
 }
+insertAtFront(value)
+{
+
+    let newNode = new Node (value);
+    newNode.next = this.head;
+    this.head = newNode 
+    
+return this
+
+}
+
+
+reverse()
+{
+    if (this.isEmpty()){
+        return false
+    }
+    let prev = null;
+    let current = this.head;
+    let next = null;
+    while(current!==null)
+    {
+        next = current.next;
+        current.next = prev;
+        prev = current ;
+        current=next;
+        
+        
+    }
+    this.head=prev
+    return this.head
+
+}
 } 
 
 var firstNode = new Node (5);
@@ -127,3 +160,7 @@ console.log(mySLL);
 mySLL.read(mySLL)
 mySLL.removeAtFront(661);
 console.log(mySLL);
+mySLL.insertAtFront(200);
+mySLL.read(mySLL);
+mySLL.reverse()
+mySLL.read(mySLL);
