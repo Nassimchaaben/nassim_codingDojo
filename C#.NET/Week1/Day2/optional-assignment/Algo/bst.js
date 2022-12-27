@@ -41,8 +41,28 @@ class BST{
         return maxVal
 
     }
-
+    find(value){
+        if (this.isEmpty()!==null){
+            let runner = this.root;
+            while(runner){
+                if(runner.value == value){
+                    return true
+                }
+                else{
+                    if(runner.value>value){
+                        runner=runner.left
+                    }
+                    runner=runner.right
+                }
+        }return false
+        
+        {
+            
+        }
+    }
 }
+}    
+
 
 var node1 = new Node (8);
 var node2 = new Node (45);
@@ -54,3 +74,4 @@ console.log(myBst.isEmpty());
 myBst.root= node1;
 console.log(myBst.isEmpty());
 console.log(myBst.min());
+console.log(myBst.find(8));
