@@ -1,0 +1,51 @@
+@model Dish
+<a asp-controller="Home" asp-action="Index">Home</a>
+<form method="post" asp-action="Create" asp-controller="Home" >
+    <div class="d-flex ">
+        <div class="d-flex flex-column gap-5">
+            <div class="form-group">
+            <span asp-validation-for="Chef" class="text-danger"></span>
+            <label asp-for="Chef"></label>
+            <input asp-for="Chef">
+            </div>
+            <div class="form-group">
+            <span asp-validation-for="Name" class="text-danger"></span>
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+            </div>
+            <div class="form-group">
+            <span asp-validation-for="Calories" class="text-danger"></span>
+            <label asp-for="Calories"></label>
+            <input asp-for="Calories">
+            </div>
+        </div>
+        <div class="d-flex flex-column gap-5">
+     <div class="form-group">
+        <span asp-validation-for="Tastiness" class="text-danger"></span>
+        <label asp-for="Tastiness"></label>
+        <select asp-for="Tastiness">
+        @for(var tast = 1; tast <= 5; tast++)
+        {
+            if(tast == 5)
+            {
+                <option selected value="@tast">@tast</option>
+            }
+            else
+            {
+                <option value="@tast">@tast</option>
+            }
+        }
+        </select>
+    </div>
+    </div>
+    <div class="d-flex flex-column gap-5">
+    <div class="form-group">
+        <span asp-validation-for="Description" class="text-danger"></span>
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+    <button>Add Dish</button>
+    </div>
+    </div>
+</form>
+
