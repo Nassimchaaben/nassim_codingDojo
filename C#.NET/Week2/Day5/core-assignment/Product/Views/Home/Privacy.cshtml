@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Categorie";
+}
+<h1>@ViewData["Title"]</h1>
+@model Categorie
+<div class="text-center">
+    <h1><a href="">Product</a> | <a href="">Categorie</a> </h1>
+</div>
+<div class="row">
+    <div class="col-6">
+        <h1>New Category</h1>
+                <form asp-action="CreateCategory" asp-controller="Home">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <span asp-validation-for="Name"></span>
+                        <input asp-for="Name">
+                    </div>
+                    <input type="Submit" value="Create">
+                </form>
+    </div>
+    <div class="col-6">
+        <h1>All Categories</h1>
+        @foreach (Categorie c in ViewBag.AllCategory)
+        {
+            <p><a asp-route-CategorieId="@c.CategorieId" asp-action="ShowCat">@c.Name</a></p>
+        }
+    </div>
+</div>
